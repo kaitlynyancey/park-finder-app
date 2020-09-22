@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>National Parks Search</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>National Park Finder</h1>
+    <section>
+      <form>
+        <label for="state">Select a State:</label>
+        <select id="state" name="state">
+	        <option value="AL">Alabama (AL)</option>
+	        <option value="AK">Alaska (AK)</option>
+          <option value="AZ">Arizona (AZ)</option>
+          <option value="AR">Arkansas (AR)</option>
+          <option value="CA">California (CA)</option>
+          <option value="CO">Colorado (CO)</option>
+          <option value="CT">Connecticut (CT)</option>
+          <option value="DE">Delaware (DE)</option>
+          <option value="DC">District Of Columbia (DC)</option>
+          <option value="FL">Florida (FL)</option>
+          <option value="GA">Georgia (GA)</option>
+          <option value="HI">Hawaii (HI)</option>
+          <option value="ID">Idaho (ID)</option>
+          <option value="IL">Illinois (IL)</option>
+          <option value="IN">Indiana (IN)</option>
+          <option value="IA">Iowa (IA)</option>
+          <option value="KS">Kansas (KS)</option>
+          <option value="KY">Kentucky (KY)</option>
+          <option value="LA">Louisiana (LA)</option>
+          <option value="ME">Maine (ME)</option>
+          <option value="MD">Maryland (MD)</option>
+          <option value="MA">Massachusetts (MA)</option>
+          <option value="MI">Michigan (MI)</option>
+          <option value="MN">Minnesota (MN)</option>
+          <option value="MS">Mississippi (MS)</option>
+          <option value="MO">Missouri (MO)</option>
+          <option value="MT">Montana (MT)</option>
+          <option value="NE">Nebraska (NE)</option>
+          <option value="NV">Nevada (NV)</option>
+          <option value="NH">New Hampshire (NH)</option>
+          <option value="NJ">New Jersey (NJ)</option>
+          <option value="NM">New Mexico (NM)</option>
+          <option value="NY">New York (NY)</option>
+          <option value="NC">North Carolina (NC)</option>
+          <option value="ND">North Dakota (ND)</option>
+          <option value="OH">Ohio (OH)</option>
+          <option value="OK">Oklahoma (OK)</option>
+          <option value="OR">Oregon (OR)</option>
+          <option value="PA">Pennsylvania (PA)</option>
+          <option value="RI">Rhode Island (RI)</option>
+          <option value="SC">South Carolina (SC)</option>
+          <option value="SD">South Dakota (SD)</option>
+          <option value="TN">Tennessee (TN)</option>
+          <option value="TX">Texas (TX)</option>
+          <option value="UT">Utah (UT)</option>
+          <option value="VT">Vermont (VT)</option>
+          <option value="VA">Virginia (VA)</option>
+          <option value="WA">Washington (WA)</option>
+          <option value="WV">West Virginia (WV)</option>
+          <option value="WI">Wisconsin (WI)</option>
+          <option value="WY">Wyoming (WY)</option>
+        </select>				
+        <br>
+        <label for="searchNum">Number of Results to Display:</label>
+        <input type ="number" name="searchNum" id="searchNum" value="10" max="100" min="1"><br>
+        <button type="submit">Submit</button>
+        <button type="reset" class="js-reset">Reset</button>
+      </form>
+    </section>
+
+    <section class="hidden results">
+      <h3>Here are your results:</h3>
+      <ul id="results-section">
+      </ul>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
